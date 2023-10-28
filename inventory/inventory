@@ -12,3 +12,8 @@ db_server_1 ansible_host=172.31.35.171 ansible_ssh_user=ec2-user
 lb_nginx_1 ansible_host=172.31.44.68 ansible_ssh_user=ubuntu
 lb_apache_1 ansible_host=172.31.32.60 ansible_ssh_user=ubuntu
 
+[uat-webservers]
+uat_server_1 ansible_host=172.31.17.169 ansible_ssh_user=ec2-user 
+uat_server_2 ansible_host=172.31.28.93 ansible_ssh_user=ec2-user 
+
+
