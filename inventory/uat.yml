@@ -1,0 +1,18 @@
+[nfs]
+nfs-server-1 ansible_host=172.31.45.32 ansible_ssh_user=ec2-user
+
+[webservers]
+app-server-1 ansible_host=172.31.46.153 ansible_ssh_user=ec2-user
+app-server-2 ansible_host=172.31.36.219 ansible_ssh_user=ec2-user
+
+[db]
+db-server-1 ansible_host=172.31.35.171 ansible_ssh_user=ec2-user
+
+[lb]
+lb-nginx-1 ansible_host=172.31.44.68 ansible_ssh_user=ubuntu
+lb-apache-1 ansible_host=172.31.32.60 ansible_ssh_user=ubuntu
+
+[uat-webservers]
+uat-server-1 ansible_host=172.31.17.169 ansible_ssh_user=ec2-user 
+uat-server-2 ansible_host=172.31.28.93 ansible_ssh_user=ec2-user 
+
