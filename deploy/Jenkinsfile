@@ -15,7 +15,7 @@ pipeline {
         }
 
       stage('Checkout SCM') {
-         steps{
+         steps {
             git branch: 'main', url: 'https://github.com/magamudi/ansible-config-mgt.git'
          }
        }
@@ -34,7 +34,7 @@ pipeline {
       }
 
       stage('Clean Workspace after build') {
-        steps{
+        steps {
           cleanWs(cleanWhenAborted: true, cleanWhenFailure: true, cleanWhenNotBuilt: true, cleanWhenUnstable: true, deleteDirs: true)
         }
       }
